@@ -14,8 +14,7 @@ function getSum(numbers) {
   let res;
   res = 0;
   for (let i = 0; i < numbers.length; i++) {
-    const element = array[i];
-    res = res+element;  
+    res = res+numbers[i];  
   }
   return res;
 }
@@ -84,7 +83,7 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  let output;
+  let output = [];
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i]%2 !== 0){
       output.push(numbers[i]);
